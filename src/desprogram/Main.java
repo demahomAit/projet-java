@@ -4,6 +4,7 @@ import java.util.*;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
+
 public class Main {
 
 		public static void main(String[] args) throws Exception {
@@ -22,6 +23,7 @@ public class Main {
 	        
 	        System.out.println("entrer le texte a chiffrer:");
 	        String text =scanner.nextLine();
+	        scanner.close();
 	        byte[] ciphertext = encrypter.encrypt(text.getBytes("UTF-8"));
 
 	        // Afficher le texte chiffré
